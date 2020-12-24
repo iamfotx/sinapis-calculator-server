@@ -1,4 +1,4 @@
-# RESTful API using Node.js, Express, Mongoose & TypeScript
+# Sinapis calculator Server
 
 
 
@@ -47,7 +47,7 @@ You need to install [Node.js](https://nodejs.org/en/download/) on your machine.
 
 3. Start the app using `npm run dev`
 
-4. After that, go to: `http://localhost:3000/v1/sum`
+4. After that, go to: `http://localhost:3000/v1/calculator/sum`
 
 ### Directory Structure
 
@@ -55,8 +55,8 @@ You need to install [Node.js](https://nodejs.org/en/download/) on your machine.
 ├── src
 │   ├── apiV1
 │   │   ├── calculator
-│   │   │   ├── sum
-│   │   │   │   ├── sum.controller.ts
+│   │   │   └── calculator.controller.ts
+│   │   │   └── calculator.helpers.ts
 │   │   │   └── calculator.route.ts
 │   │   └── index.ts
 │   ├── config
@@ -78,7 +78,7 @@ You need to install [Node.js](https://nodejs.org/en/download/) on your machine.
 
 | Method   | Resource        | Description                                                                                                                                 |
 | :------- | :-------------- | :------------------------------------------------------------------------------------------------------------------------------------------ |
-| `POST`   | `/sum`     | It sums two numbers. You need to specify in the body the following attribute(s): `numbers: Array<number>`.                    |
+| `POST`   | `/calculator/sum`     | It sums two numbers. You need to specify in the body the following attribute(s): `numbers: Array<number>`.                    |
 
 ### Available scripts
 
